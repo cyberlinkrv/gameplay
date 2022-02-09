@@ -1,24 +1,47 @@
-import React, { useState } from "react";
-import { View, Text, TextInput } from "react-native";
+import React from "react";
+import { 
+  View, 
+  Text, 
+  Image,
+  StatusBar,
+ } from "react-native";
+
 import { styles } from './styles';
 
+import IllustrationImg from '../../assets/illustration.png';
+
+
 export function SingIn(){
-const [text, setText] = useState('');
-
-
 
   return(
 
     <View style={styles.container}>
-      <Text>Hello World, Olá Divino Seja bem vindo</Text>
+      
+      <StatusBar 
+      barStyle="light-content"
+      backgroundColor="transparent"
+      translucent/>
 
-    <TextInput 
-    style={styles.input}
-    onChangeText={setText}/>
+     <Image 
+     source={IllustrationImg}
+     style={styles.image} 
+     resizeMode="stretch"
+     />
+    <View style={styles.content}>
+    <Text style={styles.title}>
+      Conecte-se {`\n`}
+      e organize suas {`\n`}
+      jogatinas
+    </Text>
+    <Text style={styles.subtitle}>
+      Crie grupos para jogar seus games {`\n`}
+      favoritos com seus amigos
+    </Text>
 
-    <Text>
-        Você Digitou: {text}
-        </Text>
+
+
+
+    </View>
 
 
     </View>
