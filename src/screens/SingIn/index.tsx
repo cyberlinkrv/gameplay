@@ -9,6 +9,7 @@ import {
 import { styles } from './styles';
 
 import IllustrationImg from '../../assets/illustration.png';
+import { ButtonIcon } from "../../components/ButtonIcon";
 
 
 export function SingIn(){
@@ -37,7 +38,8 @@ export function SingIn(){
       Crie grupos para jogar seus games {`\n`}
       favoritos com seus amigos
     </Text>
-
+    <ButtonIcon title="Entrar com Discord"
+    activeOpacity={0.7}/>
 
 
 
